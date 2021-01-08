@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  background: #f0f0f7;
+
+  overflow: auto;
+}
+
+.success {
+  background: #21cf69;
+  color: #ffffff;
+
+  transition: 0.2s all;
+}
+
+.success:hover {
+  background: #1dbe60;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.info {
+  background: #02c6e9;
+  color: #ffffff;
+
+  transition: 0.2s all;
+}
+
+.info:hover {
+  background: #07b7d6;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.warning {
+  background: #e4d71b;
+  color: #474755;
+
+  transition: 0.2s all;
+}
+
+.warning:hover {
+  background: #ddd01c;
+  color: #474755;
+
+  text-decoration: none;
+}
+
+.danger {
+  background: #dd1b34;
+  color: #ffffff;
+
+  transition: 0.2s all;
+}
+
+.danger:hover {
+  background: #d11931;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.container {
+  flex: 1;
+
+  padding: 3rem 0;
+}
+
+.container h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  text-align: center;
+  color: #474755;
+}
+
+.container form {
+  align-self: flex-start;
+
+  width: 50%;
+
+  margin: 2rem 0;
+}
+
+.container form .input-group {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.container form .input-group .form-group {
+  flex: 1;
+}
+
+.container form .input-group .form-group.small-width {
+  max-width: 4rem;
+}
+
+.container form .button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container form .button-group button,
+.container form .button-group a {
+  padding: 0.7rem 1.5rem;
+
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 6px 0 #ddd;
+  border: 0;
+}
+
+.container form .button-group button + button {
+  margin-left: 1rem;
+}
+
+.container .table-container {
+  width: 100%;
+  min-height: 10rem;
+  max-height: 30rem;
+
+  margin: 2rem 0;
+
+  box-shadow: 2px 2px 6px #ddd;
+
+  overflow: auto;
+}
+
+.container .table-container table {
+  width: 100%;
+
+  background: #ffffff;
+}
+
+.container .table-container table tbody tr {
+  border-top: 1px solid #ddd;
+}
+
+.container .table-container table th,
+.container .table-container table td {
+  padding: 1rem;
+}
+
+.container .table-container table thead tr th.large-width {
+  width: 80%;
+}
+
+.container .table-container table td a {
+  padding: 0.7rem 1.5rem;
+
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 6px 0 #ddd;
+}
+
+.container > a {
+  align-self: flex-start;
+
+  padding: 1rem 2rem;
+
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 6px 0 #ddd;
+
+  font-weight: 500;
+  text-decoration: none;
+}
